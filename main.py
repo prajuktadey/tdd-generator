@@ -1,7 +1,6 @@
 import streamlit as st
 import ollama
 
-# Function to get response from Ollama model
 def get_ollama_response(input_text, no_words, blog_style):
     prompt = (
         f"Generate a high-value technology article on the topic: '{input_text}'. "
