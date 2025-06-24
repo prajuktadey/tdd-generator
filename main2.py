@@ -3,7 +3,6 @@ import streamlit as st
 from langchain_community.chat_models import ChatOllama
 from langchain.prompts import ChatPromptTemplate
 
-# Initialize Ollama model
 llm = ChatOllama(
     model="mistral",
     base_url="http://localhost:11434",
@@ -12,7 +11,6 @@ llm = ChatOllama(
     max_tokens=1000  
 )
 
-# Streamlit UI
 st.set_page_config(page_title="Simple Article Generator", page_icon="📝", layout="wide")
 st.title("📝 AI Article Generator")
 
